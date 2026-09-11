@@ -1,4 +1,4 @@
-# Smart Clinic Management System — v4
+# Smart Clinic Management System 
 
 ## Start without editing application.properties
 From this project folder in PowerShell:
