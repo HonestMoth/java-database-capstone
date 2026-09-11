@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Appointments</title>
+
+    <link
+        rel="icon"
+        href="../assets/images/favicon.ico"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/patientDashboard.css"
+    >
+
+    <script
+        src="../js/util.js"
+        defer
+    ></script>
+
+    <script
+        src="../js/components/header.js"
+        defer
+    ></script>
+
+    <script
+        src="../js/components/footer.js"
+        defer
+    ></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="wrapper">
+
+            <div id="header"></div>
+
+
+            <main class="main-content">
+
+                <section class="appointments-container">
+
+                    <div class="appointments-header">
+
+                        <h1>
+                            My Appointments
+                        </h1>
+
+                        <p>
+                            View your scheduled clinic appointments.
+                        </p>
+
+                    </div>
+
+
+                    <div class="appointment-filters">
+
+                        <input
+                            type="text"
+                            id="appointmentSearch"
+                            placeholder="Search appointments..."
+                        >
+
+                        <select id="conditionFilter">
+
+                            <option value="">
+                                All Conditions
+                            </option>
+
+                            <option value="scheduled">
+                                Scheduled
+                            </option>
+
+                            <option value="completed">
+                                Completed
+                            </option>
+
+                            <option value="cancelled">
+                                Cancelled
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div
+                        id="appointmentsContent"
+                        class="appointments-content"
+                    >
+
+                        <p class="loading-message">
+                            Loading appointments...
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+
+            <div id="footer"></div>
+
+        </div>
+
+    </div>
+
+
+    <script
+        type="module"
+        src="../js/patientAppointment.js"
+    ></script>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Doctor Dashboard</title>
+
+    <link
+        rel="icon"
+        href="/assets/images/favicon.ico"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/assets/css/adminDashboard.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/assets/css/doctorDashboard.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/assets/css/style.css"
+    >
+
+    <script
+        src="/js/render.js"
+        defer
+    ></script>
+
+    <script
+        src="/js/util.js"
+        defer
+    ></script>
+
+    <script
+        src="/js/components/header.js"
+        defer
+    ></script>
+
+    <script
+        src="/js/components/footer.js"
+        defer
+    ></script>
+
+    <script
+        type="module"
+        src="/js/components/patientRows.js"
+    ></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="wrapper">
+
+            <!-- Header -->
+            <div id="header"></div>
+
+
+            <!-- Main Dashboard -->
+            <main class="main-content">
+
+                <section class="doctor-dashboard">
+
+                    <div class="dashboard-header">
+
+                        <h1>
+                            Doctor Dashboard
+                        </h1>
+
+                        <p>
+                            Manage your appointments and patient records.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Search and Filters -->
+                    <div class="filter-wrapper">
+
+                        <input
+                            type="text"
+                            id="searchBar"
+                            class="searchBar"
+                            placeholder="Search patient by name..."
+                        >
+
+                        <button
+                            type="button"
+                            id="todayBtn"
+                            class="button"
+                        >
+                            Today's Appointments
+                        </button>
+
+                        <input
+                            type="date"
+                            id="datePicker"
+                            class="filter-select"
+                        >
+
+                    </div>
+
+
+                    <!-- Patient Records -->
+                    <div class="table-wrapper">
+
+                        <table id="patientTable">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Patient ID
+                                    </th>
+
+                                    <th>
+                                        Name
+                                    </th>
+
+                                    <th>
+                                        Phone
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Prescription
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="patientTableBody">
+
+                                <tr>
+
+                                    <td
+                                        colspan="5"
+                                        class="noPatientRecord"
+                                    >
+                                        Loading patient records...
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+
+            <!-- Footer -->
+            <div id="footer"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div
+        id="modal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <span
+                id="closeModal"
+                class="close"
+            >
+                &times;
+            </span>
+
+            <div id="modal-body"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Modal functionality -->
+    <script
+        type="module"
+        src="/js/components/modals.js"
+    ></script>
+
+
+    <!-- Doctor dashboard logic -->
+    <script
+        type="module"
+        src="/js/doctorDashboard.js"
+    ></script>
+
+</body>
+
+</html>

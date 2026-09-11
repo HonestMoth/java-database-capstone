@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Add Prescription</title>
+
+    <link
+        rel="icon"
+        href="../assets/images/favicon.ico"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/addPrescription.css"
+    >
+
+    <script
+        src="../js/util.js"
+        defer
+    ></script>
+
+    <script
+        src="../js/components/header.js"
+        defer
+    ></script>
+
+    <script
+        src="../js/components/footer.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="wrapper">
+
+            <div id="header"></div>
+
+
+            <main class="main-content">
+
+                <section class="prescription-container">
+
+                    <div class="prescription-header">
+
+                        <h1>
+                            Add Prescription
+                        </h1>
+
+                        <p>
+                            Enter the prescription details for the patient.
+                        </p>
+
+                    </div>
+
+
+                    <form id="prescriptionForm">
+
+                        <input
+                            type="hidden"
+                            id="patientId"
+                        >
+
+                        <input
+                            type="hidden"
+                            id="appointmentId"
+                        >
+
+
+                        <div class="form-group">
+
+                            <label for="medicine">
+                                Medicine
+                            </label>
+
+                            <input
+                                type="text"
+                                id="medicine"
+                                placeholder="Medicine name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="dosage">
+                                Dosage
+                            </label>
+
+                            <input
+                                type="text"
+                                id="dosage"
+                                placeholder="Example: 500mg"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="frequency">
+                                Frequency
+                            </label>
+
+                            <input
+                                type="text"
+                                id="frequency"
+                                placeholder="Example: Twice a day"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="duration">
+                                Duration
+                            </label>
+
+                            <input
+                                type="text"
+                                id="duration"
+                                placeholder="Example: 5 days"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="instructions">
+                                Instructions
+                            </label>
+
+                            <textarea
+                                id="instructions"
+                                rows="5"
+                                placeholder="Additional instructions..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-actions">
+
+                            <button
+                                type="submit"
+                                class="button"
+                            >
+                                Save Prescription
+                            </button>
+
+                            <button
+                                type="button"
+                                id="cancelBtn"
+                                class="cancel-btn"
+                            >
+                                Cancel
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </main>
+
+
+            <div id="footer"></div>
+
+        </div>
+
+    </div>
+
+
+    <script
+        type="module"
+        src="../js/addPrescription.js"
+    ></script>
+
+</body>
+
+</html>

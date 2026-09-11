@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0F766E">
+  <title>Smart Clinic — Care Operations</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./js/util.js" defer></script>
+  <script src="./js/render.js" defer></script>
+  <script src="./js/components/header.js" defer></script>
+  <script src="./js/components/footer.js" defer></script>
+  <script src="./js/home.js" defer></script>
+  <script type="module" src="./js/services/index.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="landing-nav">
+      <a class="brand-lockup" href="/" aria-label="Smart Clinic home">
+        <span class="brand-icon">+</span>
+        <span><strong>Smart Clinic</strong><small>CARE OPERATIONS</small></span>
+      </a>
+      <div class="nav-status"><span class="status-dot"></span> Systems operational</div>
+    </header>
+
+    <main class="landing-main">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="kicker">PRIVATE MULTI-SPECIALTY CLINIC</span>
+          <h1>Exceptional care,<br><em>beautifully coordinated.</em></h1>
+          <p>One intelligent workspace for clinical teams, administrators, and patients. Manage care, appointments, availability, and patient relationships with clarity.</p>
+          <div class="hero-meta">
+            <span>Secure access</span><span>Smart scheduling</span><span>Connected care</span>
+          </div>
+        </div>
+
+        <section class="portal-card" aria-labelledby="portal-title">
+          <div class="card-head"><div><span class="overline">SECURE PORTAL</span><h2 id="portal-title">Choose your workspace</h2></div><span class="shield">✓</span></div>
+          <div class="portal-list">
+            <button class="portal-option" type="button" data-role="admin">
+              <span class="portal-icon">A</span><span class="portal-copy"><strong>Admin Console</strong><small>Clinic operations &amp; team management</small></span><span class="arrow">→</span>
+            </button>
+            <button class="portal-option" type="button" data-role="doctor">
+              <span class="portal-icon">D</span><span class="portal-copy"><strong>Doctor Workspace</strong><small>Appointments, patients &amp; prescriptions</small></span><span class="arrow">→</span>
+            </button>
+            <button class="portal-option" type="button" data-role="patient">
+              <span class="portal-icon">P</span><span class="portal-copy"><strong>Patient Portal</strong><small>Find care &amp; manage appointments</small></span><span class="arrow">→</span>
+            </button>
+          </div>
+          <div class="privacy-note"><span>⌁</span> Your session is protected with signed authentication.</div>
+        </section>
+      </section>
+
+      <section class="trust-strip">
+        <div><strong>01</strong><span>CLINICAL TEAM</span><small>Doctors &amp; specialists</small></div>
+        <div><strong>02</strong><span>CARE COORDINATION</span><small>Appointments &amp; schedules</small></div>
+        <div><strong>03</strong><span>PATIENT EXPERIENCE</span><small>Simple, secure access</small></div>
+      </section>
+    </main>
+    <footer class="landing-footer">© 2026 Smart Clinic Management System <span>Designed for modern care operations</span></footer>
+  </div>
+  <div id="modal" class="modal" aria-hidden="true"><button id="closeModal" class="close" aria-label="Close">×</button><div id="modal-body"></div></div>
+</body>
+</html>
